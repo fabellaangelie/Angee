@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taylor Swift Fan Page - Classy MP3 Player Design">
+    <title>Taylor Swift Fan Page</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #e9defa, #fbfcdb);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .mp3-player {
+            background: #3d3d3d;
+            width: 400px;
+            height: 600px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .image-container {
+            background: linear-gradient(145deg, #e5e5e5, #c5a8a8);
+            padding: 10px;
+            width: 100%;
+            height: 300px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+        }
+        .image-container img {
+            border-radius: 15px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            margin-top: 10px;
+            font-size: 28px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .controls button {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            margin: 0 15px;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .controls button:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        .controls button i {
+            font-size: 20px;
+            color: #fff;
+        }
+        .song-list {
+            margin-top: 30px;
+            width: 90%;
+            text-align: left;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+        .song-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .song-list ul li {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background-color 0.3s;
+        }
+        .song-list ul li:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mp3-player">
+        <!-- Taylor Swift's picture -->
+        <div class="image-container">
+            <img src="image/taylor.jfif" alt="Taylor Swift">
+        </div>
+
+        <!-- Song title -->
+        <h2>Taylor Swift</h2>
+
+        <!-- Player controls -->
+        <div class="controls">
+            <button style="background-color: #ff4d4d; border: none; margin: 0 15px; padding: 15px; border-radius: 50%; cursor: pointer; transition: transform 0.3s;">
+                <i class="fa fa-backward" style="color: white;"></i>
+            </button>
+            <button style="background-color: #4d94ff; border: none; margin: 0 15px; padding: 15px; border-radius: 50%; cursor: pointer; transition: transform 0.3s;">
+                <i class="fa fa-play" style="color: white;"></i>
+            </button>
+            <button style="background-color: #ff4d94; border: none; margin: 0 15px; padding: 15px; border-radius: 50%; cursor: pointer; transition: transform 0.3s;">
+                <i class="fa fa-forward" style="color: white;"></i>
+            </button>
+        </div>
+
+        <!-- Song list -->
+        <div class="song-list">
+            <ul>
+                <li>Love Story</li>
+                <li>Blank Space</li>
+                <li>Shake It Off</li>
+                <li>You Belong With Me</li>
+                <li>Wildest Dreams</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Font Awesome for icons (CDN) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
